@@ -1,0 +1,42 @@
+Revision history for Perl module Ark
+
+0.39 2013-09-11T16:42:39Z
+     - first release on cpan
+     - minil migrate
+
+0.38    Mon Jul 29 12:04:05 JST 2013
+     - [bug fix] ignore case in filterling of Plugin::CSRFDefender
+
+0.37    Wed May 15 21:10:47 JST 2013
+     - CSRFDefender filters post form only
+     - Session::State::URI is enabled in non mobile with specifications
+     - disable uri_for overriding with turning `uri_for_override` specificaion to false
+
+0.36    Tue May 14 11:59:34 JST 2013
+     - fix bug. CSRFDefender ultimately hadn't worked!
+     - Can't call $session->(set|remove) method after finalize session
+
+0.35    Mon May 13 22:55:42 JST 2013
+     - fix CSRFDefender bug
+
+0.34    Mon May 13 21:59:16 JST 2013
+     - [INCOMPATIBLE CHANGE] CSRFDefender displays error output with no question asked
+       when validate_csrf_token failed. To prevent it, you can specify `validate_only` option.
+     - Introduce Module::Install::CPANfile
+
+0.33    Fri May 10 20:46:01 JST 2013
+     - fix bug of ActionClass::Form
+     - remove Test::Base dependency
+
+0.32    Mon Apr  8 22:25:07 JST 2013
+     - Fix Ark::Models autoloder bug. Thank acidlemon for reporting.
+
+0.31    Sun Apr  7 02:33:50 JST 2013
+     - Remove dependency MouseX::Foreign and now Ark doesn't depend on Any::Moose any more
+
+0.30    Thu Apr  4 22:26:51 JST 2013
+     - use Mouse; no Any::Moose
+     - Plugin::CSRFDefender
+
+0.10 2009-10-26T12:26:26+09:00
+     - original version
