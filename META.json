@@ -5,7 +5,7 @@
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.5.6",
-   "license" : "unknown",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -44,8 +44,16 @@
       },
       "runtime" : {
          "recommends" : {
+            "DBD::SQLite" : "0",
+            "DBIx::Class" : "0",
+            "Encode::JP::Mobile" : "0",
+            "HTTP::MobileAgent" : "0",
+            "HTTP::MobileAgent::Plugin::Charset" : "0",
+            "LWPx::ParanoidAgent" : "0",
             "Locale::Maketext::Lexicon" : "0",
             "Locale::Maketext::Simple" : "0",
+            "Net::OpenID::Consumer" : "0",
+            "OAuth::Lite" : "0",
             "Text::MicroTemplate::Extended" : "0.09"
          },
          "requires" : {
@@ -72,20 +80,11 @@
             "URI" : "0",
             "URI::WithBase" : "0",
             "perl" : "5.008001"
-         },
-         "suggests" : {
-            "DBD::SQLite" : "0",
-            "DBIx::Class" : "0",
-            "Encode::JP::Mobile" : "0",
-            "HTTP::MobileAgent" : "0",
-            "HTTP::MobileAgent::Plugin::Charset" : "0",
-            "LWPx::ParanoidAgent" : "0",
-            "Net::OpenID::Consumer" : "0",
-            "OAuth::Lite" : "0"
          }
       },
       "test" : {
          "requires" : {
+            "HTTP::Cookies" : "0",
             "Test::More" : "0.98",
             "Test::Output" : "0"
          }
@@ -94,7 +93,7 @@
    "provides" : {
       "Ark" : {
          "file" : "lib/Ark.pm",
-         "version" : "0.39"
+         "version" : "0.391"
       },
       "Ark::Action" : {
          "file" : "lib/Ark/Action.pm"
@@ -258,7 +257,7 @@
          "web" : "https://github.com/ark-framework/ark-perl"
       }
    },
-   "version" : "0.39",
+   "version" : "0.391",
    "x_contributors" : [
       "Masakazu Ohtsuka <o.masakazu@gmail.com>",
       "mattn <mattn.jp@gmail.com>",
