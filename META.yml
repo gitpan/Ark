@@ -3,7 +3,6 @@ abstract: 'light weight Catalyst-ish web application framework'
 author:
   - 'Daisuke Murase <typester@cpan.org>'
 build_requires:
-  HTTP::Cookies: 0
   Test::More: 0.98
   Test::Output: 0
 configure_requires:
@@ -30,7 +29,7 @@ no_index:
 provides:
   Ark:
     file: lib/Ark.pm
-    version: 1.00
+    version: 1.01
   Ark::Action:
     file: lib/Ark/Action.pm
   Ark::ActionClass::Form:
@@ -162,7 +161,7 @@ requires:
   Path::AttrRouter: 0.03
   Path::Class: 0.16
   Plack: 0.9910
-  Plack::Request::WithEncoding: 0
+  Plack::Request::WithEncoding: 0.10
   Plack::Response: 0
   Text::MicroTemplate: 0
   Text::SimpleTable: 0
@@ -174,7 +173,7 @@ resources:
   bugtracker: https://github.com/ark-framework/ark-perl/issues
   homepage: https://github.com/ark-framework/ark-perl
   repository: git://github.com/ark-framework/ark-perl.git
-version: 1.00
+version: 1.01
 x_contributors:
   - 'Masakazu Ohtsuka <o.masakazu@gmail.com>'
   - 'mattn <mattn.jp@gmail.com>'
