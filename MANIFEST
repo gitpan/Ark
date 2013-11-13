@@ -118,6 +118,7 @@ t/plugin_authentication_store_model.t
 t/plugin_core.t
 t/plugin_csrf_defender.t
 t/plugin_csrf_defender_error_action.t
+t/plugin_csrf_defender_filter_form.t
 t/plugin_csrf_defender_with_options.t
 t/plugin_default.t
 t/plugin_encoding_mobilejp.t
@@ -143,6 +144,7 @@ t/plugin_session_state_uri_for.t
 t/plugin_unicode.t
 t/redirect_and_detach.t
 t/regexp_action.t
+t/request.t
 t/serialize_data/lib/TestApp.pm
 t/serialize_data/lib/TestApp/Controller/Root.pm
 t/view_mt.t

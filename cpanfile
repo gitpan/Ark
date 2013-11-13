@@ -1,6 +1,6 @@
-requires 'Plack';
-requires 'Plack::Request';
-requires 'CGI::Simple';
+requires 'Plack', '0.9910';
+requires 'Plack::Request::WithEncoding';
+requires 'Plack::Response';
 requires 'Mouse',       '1.0';
 requires 'Try::Tiny',   '0.02';
 requires 'Path::Class', '0.16';
@@ -51,13 +51,6 @@ requires 'Clone';
     recommends 'HTTP::MobileAgent::Plugin::Charset';
     recommends 'OAuth::Lite';
 #};
-
-on develop => sub {
-    requires 'Module::Install';
-    requires 'Module::Install::AuthorTests';
-    requires 'Module::Install::ReadmeMarkdownFromPod';
-    requires 'Module::Install::CPANfile';
-};
 
 on test => sub {
     requires 'Test::More' => '0.98';

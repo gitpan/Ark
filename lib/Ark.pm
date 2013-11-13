@@ -5,7 +5,7 @@ use Mouse::Exporter;
 
 use Ark::Core;
 
-our $VERSION = '0.392';
+our $VERSION = '1.00';
 
 do {
     my %EXPORTS;
@@ -82,13 +82,6 @@ Ark - light weight Catalyst-ish web application framework
 =head1 DESCRIPTION
 
 Ark is light weight Catalyst-ish web application framework.
-
-=begin html
-
-<a href="http://travis-ci.org/ark-framework/ark"><img src="https://secure.travis-ci.org/ark-framework/ark.png?branch=master" alt="Build Status"></a>
-<a href="https://coveralls.io/r/ark-framework/ark"><img src="https://coveralls.io/repos/ark-framework/ark/badge.png?branch=master" alt="Coverage Status"></a>
-
-=end html
 
 =head1 LICENSE
 
