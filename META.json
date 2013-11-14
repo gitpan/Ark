@@ -4,7 +4,7 @@
       "Daisuke Murase <typester@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.8.2",
+   "generated_by" : "Minilla/v0.9.0",
    "license" : [
       "perl_5"
    ],
@@ -43,17 +43,8 @@
       },
       "runtime" : {
          "recommends" : {
-            "DBD::SQLite" : "0",
-            "DBIx::Class" : "0",
-            "Encode::JP::Mobile" : "0",
-            "HTTP::MobileAgent" : "0",
-            "HTTP::MobileAgent::Plugin::Charset" : "0",
-            "LWPx::ParanoidAgent" : "0",
-            "Locale::Maketext::Lexicon" : "0",
-            "Locale::Maketext::Simple" : "0",
-            "Net::OpenID::Consumer" : "0",
-            "OAuth::Lite" : "0",
-            "Text::MicroTemplate::Extended" : "0.09"
+            "Text::MicroTemplate::Extended" : "0.09",
+            "Text::Xslate" : "0"
          },
          "requires" : {
             "Class::Data::Inheritable" : "0",
@@ -82,19 +73,26 @@
             "URI" : "0",
             "URI::WithBase" : "0",
             "perl" : "5.008001"
+         },
+         "suggests" : {
+            "Ark::Plugin::Authentication" : "0",
+            "Ark::Plugin::I18N" : "0",
+            "Ark::Plugin::MobileJP" : "0",
+            "Ark::Plugin::ReproxyCallback" : "0"
          }
       },
       "test" : {
          "requires" : {
             "Test::More" : "0.98",
-            "Test::Output" : "0"
+            "Test::Output" : "0",
+            "Test::Requires" : "0"
          }
       }
    },
    "provides" : {
       "Ark" : {
          "file" : "lib/Ark.pm",
-         "version" : "1.01"
+         "version" : "1.10"
       },
       "Ark::Action" : {
          "file" : "lib/Ark/Action.pm"
@@ -138,41 +136,8 @@
       "Ark::Plugin" : {
          "file" : "lib/Ark/Plugin.pm"
       },
-      "Ark::Plugin::Authentication" : {
-         "file" : "lib/Ark/Plugin/Authentication.pm"
-      },
-      "Ark::Plugin::Authentication::Backend" : {
-         "file" : "lib/Ark/Plugin/Authentication/Backend.pm"
-      },
-      "Ark::Plugin::Authentication::Credential::OpenID" : {
-         "file" : "lib/Ark/Plugin/Authentication/Credential/OpenID.pm"
-      },
-      "Ark::Plugin::Authentication::Credential::Password" : {
-         "file" : "lib/Ark/Plugin/Authentication/Credential/Password.pm"
-      },
-      "Ark::Plugin::Authentication::Credential::Twitter" : {
-         "file" : "lib/Ark/Plugin/Authentication/Credential/Twitter.pm"
-      },
-      "Ark::Plugin::Authentication::Store::DBIx::Class" : {
-         "file" : "lib/Ark/Plugin/Authentication/Store/DBIx/Class.pm"
-      },
-      "Ark::Plugin::Authentication::Store::Minimal" : {
-         "file" : "lib/Ark/Plugin/Authentication/Store/Minimal.pm"
-      },
-      "Ark::Plugin::Authentication::Store::Model" : {
-         "file" : "lib/Ark/Plugin/Authentication/Store/Model.pm"
-      },
-      "Ark::Plugin::Authentication::Store::Null" : {
-         "file" : "lib/Ark/Plugin/Authentication/Store/Null.pm"
-      },
-      "Ark::Plugin::Authentication::User" : {
-         "file" : "lib/Ark/Plugin/Authentication/User.pm"
-      },
       "Ark::Plugin::CSRFDefender" : {
          "file" : "lib/Ark/Plugin/CSRFDefender.pm"
-      },
-      "Ark::Plugin::Encoding::MobileJP" : {
-         "file" : "lib/Ark/Plugin/Encoding/MobileJP.pm"
       },
       "Ark::Plugin::Encoding::Null" : {
          "file" : "lib/Ark/Plugin/Encoding/Null.pm"
@@ -182,18 +147,6 @@
       },
       "Ark::Plugin::FormValidator::Lite" : {
          "file" : "lib/Ark/Plugin/FormValidator/Lite.pm"
-      },
-      "Ark::Plugin::I18N" : {
-         "file" : "lib/Ark/Plugin/I18N.pm"
-      },
-      "Ark::Plugin::MobileAgent" : {
-         "file" : "lib/Ark/Plugin/MobileAgent.pm"
-      },
-      "Ark::Plugin::ReproxyCallback" : {
-         "file" : "lib/Ark/Plugin/ReproxyCallback.pm"
-      },
-      "Ark::Plugin::ReproxyCallback::OpenSocial" : {
-         "file" : "lib/Ark/Plugin/ReproxyCallback/OpenSocial.pm"
       },
       "Ark::Plugin::Session" : {
          "file" : "lib/Ark/Plugin/Session.pm"
@@ -250,15 +203,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/ark-framework/ark-perl/issues"
+         "web" : "https://github.com/ark-framework/ark/issues"
       },
-      "homepage" : "https://github.com/ark-framework/ark-perl",
+      "homepage" : "https://github.com/ark-framework/ark",
       "repository" : {
-         "url" : "git://github.com/ark-framework/ark-perl.git",
-         "web" : "https://github.com/ark-framework/ark-perl"
+         "url" : "git://github.com/ark-framework/ark.git",
+         "web" : "https://github.com/ark-framework/ark"
       }
    },
-   "version" : "1.01",
+   "version" : "1.10",
    "x_contributors" : [
       "Masakazu Ohtsuka <o.masakazu@gmail.com>",
       "mattn <mattn.jp@gmail.com>",

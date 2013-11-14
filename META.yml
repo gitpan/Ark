@@ -5,12 +5,13 @@ author:
 build_requires:
   Test::More: 0.98
   Test::Output: 0
+  Test::Requires: 0
 configure_requires:
   CPAN::Meta: 0
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.8.2, CPAN::Meta::Converter version 2.132510'
+generated_by: 'Minilla/v0.9.0, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,7 +30,7 @@ no_index:
 provides:
   Ark:
     file: lib/Ark.pm
-    version: 1.01
+    version: 1.10
   Ark::Action:
     file: lib/Ark/Action.pm
   Ark::ActionClass::Form:
@@ -58,44 +59,14 @@ provides:
     file: lib/Ark/Models.pm
   Ark::Plugin:
     file: lib/Ark/Plugin.pm
-  Ark::Plugin::Authentication:
-    file: lib/Ark/Plugin/Authentication.pm
-  Ark::Plugin::Authentication::Backend:
-    file: lib/Ark/Plugin/Authentication/Backend.pm
-  Ark::Plugin::Authentication::Credential::OpenID:
-    file: lib/Ark/Plugin/Authentication/Credential/OpenID.pm
-  Ark::Plugin::Authentication::Credential::Password:
-    file: lib/Ark/Plugin/Authentication/Credential/Password.pm
-  Ark::Plugin::Authentication::Credential::Twitter:
-    file: lib/Ark/Plugin/Authentication/Credential/Twitter.pm
-  Ark::Plugin::Authentication::Store::DBIx::Class:
-    file: lib/Ark/Plugin/Authentication/Store/DBIx/Class.pm
-  Ark::Plugin::Authentication::Store::Minimal:
-    file: lib/Ark/Plugin/Authentication/Store/Minimal.pm
-  Ark::Plugin::Authentication::Store::Model:
-    file: lib/Ark/Plugin/Authentication/Store/Model.pm
-  Ark::Plugin::Authentication::Store::Null:
-    file: lib/Ark/Plugin/Authentication/Store/Null.pm
-  Ark::Plugin::Authentication::User:
-    file: lib/Ark/Plugin/Authentication/User.pm
   Ark::Plugin::CSRFDefender:
     file: lib/Ark/Plugin/CSRFDefender.pm
-  Ark::Plugin::Encoding::MobileJP:
-    file: lib/Ark/Plugin/Encoding/MobileJP.pm
   Ark::Plugin::Encoding::Null:
     file: lib/Ark/Plugin/Encoding/Null.pm
   Ark::Plugin::Encoding::Unicode:
     file: lib/Ark/Plugin/Encoding/Unicode.pm
   Ark::Plugin::FormValidator::Lite:
     file: lib/Ark/Plugin/FormValidator/Lite.pm
-  Ark::Plugin::I18N:
-    file: lib/Ark/Plugin/I18N.pm
-  Ark::Plugin::MobileAgent:
-    file: lib/Ark/Plugin/MobileAgent.pm
-  Ark::Plugin::ReproxyCallback:
-    file: lib/Ark/Plugin/ReproxyCallback.pm
-  Ark::Plugin::ReproxyCallback::OpenSocial:
-    file: lib/Ark/Plugin/ReproxyCallback/OpenSocial.pm
   Ark::Plugin::Session:
     file: lib/Ark/Plugin/Session.pm
   Ark::Plugin::Session::Backend:
@@ -131,17 +102,8 @@ provides:
   Ark::View::Xslate:
     file: lib/Ark/View/Xslate.pm
 recommends:
-  DBD::SQLite: 0
-  DBIx::Class: 0
-  Encode::JP::Mobile: 0
-  HTTP::MobileAgent: 0
-  HTTP::MobileAgent::Plugin::Charset: 0
-  LWPx::ParanoidAgent: 0
-  Locale::Maketext::Lexicon: 0
-  Locale::Maketext::Simple: 0
-  Net::OpenID::Consumer: 0
-  OAuth::Lite: 0
   Text::MicroTemplate::Extended: 0.09
+  Text::Xslate: 0
 requires:
   Class::Data::Inheritable: 0
   Clone: 0
@@ -170,10 +132,10 @@ requires:
   URI::WithBase: 0
   perl: 5.008001
 resources:
-  bugtracker: https://github.com/ark-framework/ark-perl/issues
-  homepage: https://github.com/ark-framework/ark-perl
-  repository: git://github.com/ark-framework/ark-perl.git
-version: 1.01
+  bugtracker: https://github.com/ark-framework/ark/issues
+  homepage: https://github.com/ark-framework/ark
+  repository: git://github.com/ark-framework/ark.git
+version: 1.10
 x_contributors:
   - 'Masakazu Ohtsuka <o.masakazu@gmail.com>'
   - 'mattn <mattn.jp@gmail.com>'

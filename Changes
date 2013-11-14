@@ -1,5 +1,8 @@
 Revision history for Perl module Ark
 
+1.10 2013-11-14T17:31:13Z
+    - separate out plugins. Authentication, MobileJP, I18N and ReproxyCallback.
+
 1.01 2013-11-13T14:26:13Z
     - [fix] valid encoding handling in Plugin::Encoding::Null
 
