@@ -11,7 +11,7 @@ configure_requires:
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.9.0, CPAN::Meta::Converter version 2.131560'
+generated_by: 'Minilla/v0.8.2, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,7 +30,7 @@ no_index:
 provides:
   Ark:
     file: lib/Ark.pm
-    version: 1.10
+    version: 1.11
   Ark::Action:
     file: lib/Ark/Action.pm
   Ark::ActionClass::Form:
@@ -113,7 +113,7 @@ requires:
   Digest::SHA1: 0
   Exporter::AutoClean: 0
   FormValidator::Lite: 0
-  HTML::Entities: 0
+  HTML::Escape: 0
   HTML::Shakan: 0.16
   HTTP::Cookies: 0
   HTTP::Message: 0
@@ -132,10 +132,10 @@ requires:
   URI::WithBase: 0
   perl: 5.008001
 resources:
-  bugtracker: https://github.com/ark-framework/ark/issues
-  homepage: https://github.com/ark-framework/ark
-  repository: git://github.com/ark-framework/ark.git
-version: 1.10
+  bugtracker: https://github.com/ark-framework/ark-perl/issues
+  homepage: https://github.com/ark-framework/ark-perl
+  repository: git://github.com/ark-framework/ark-perl.git
+version: 1.11
 x_contributors:
   - 'Masakazu Ohtsuka <o.masakazu@gmail.com>'
   - 'mattn <mattn.jp@gmail.com>'

@@ -4,10 +4,10 @@ use Mouse;
 
 use Clone 'clone';
 use Exporter::AutoClean;
+use HTML::Escape ();
 use HTML::Shakan;
-use HTML::Shakan::Utils;
 
-extends 'Mouse::Object', 'Class::Data::Inheritable';
+extends 'Class::Data::Inheritable';
 
 __PACKAGE__->mk_classdata('_fields_data');
 __PACKAGE__->mk_classdata('_fields_data_order');
@@ -216,7 +216,7 @@ sub label {
     }
 
     sprintf q{<label for="%s">%s</label>},
-        encode_entities($field->id), encode_entities($label);
+        HTML::Escape::escape_html($field->id), HTML::Escape::escape_html($label);
 }
 
 sub input {
@@ -359,6 +359,11 @@ sub messages {
 
 sub message_format {
     '<span class="error">%s</span>';
+}
+
+sub encode_entities {
+    warn 'Ark::Form::encode_entities() is deprecated. use HTML::Escape::escape_html() instead';
+    HTML::Escape::escape_html(@_);
 }
 
 __PACKAGE__->meta->make_immutable;

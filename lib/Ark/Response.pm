@@ -4,6 +4,16 @@ use Scalar::Util ();
 
 extends 'Plack::Response';
 
+has body => (
+    is        => 'rw',
+    predicate => 'has_body',
+);
+
+has status => (
+    is      => 'rw',
+    default => 200,
+);
+
 has binary => (
     is      => 'rw',
     default => 0,
@@ -28,11 +38,8 @@ has deferred_response => (
 
 no Mouse;
 
-sub has_body { shift->{body} }
-
 sub finalize {
     my $self = shift;
-    $self->status(200) unless $self->status();
 
     my $headers = $self->headers->clone;
     $self->_finalize_cookies($headers);
