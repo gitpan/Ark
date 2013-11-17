@@ -30,7 +30,7 @@ no_index:
 provides:
   Ark:
     file: lib/Ark.pm
-    version: 1.11
+    version: 1.12
   Ark::Action:
     file: lib/Ark/Action.pm
   Ark::ActionClass::Form:
@@ -132,10 +132,10 @@ requires:
   URI::WithBase: 0
   perl: 5.008001
 resources:
-  bugtracker: https://github.com/ark-framework/ark-perl/issues
-  homepage: https://github.com/ark-framework/ark-perl
-  repository: git://github.com/ark-framework/ark-perl.git
-version: 1.11
+  bugtracker: https://github.com/ark-framework/ark/issues
+  homepage: https://github.com/ark-framework/ark
+  repository: git://github.com/ark-framework/ark.git
+version: 1.12
 x_contributors:
   - 'Masakazu Ohtsuka <o.masakazu@gmail.com>'
   - 'mattn <mattn.jp@gmail.com>'
