@@ -113,6 +113,7 @@ t/regexp_action.t
 t/request.t
 t/serialize_data/lib/TestApp.pm
 t/serialize_data/lib/TestApp/Controller/Root.pm
+t/view_json.t
 t/view_mt.t
 t/view_mt/forward.mt
 t/view_mt/include.mt

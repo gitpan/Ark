@@ -2,6 +2,7 @@ package Ark::View::JSON;
 use strict;
 use warnings;
 use Ark 'View';
+use JSON;
 
 has allow_callback => (
     is      => 'rw',
@@ -25,13 +26,7 @@ has json_driver => (
     lazy    => 1,
     default => sub {
         my $self = shift;
-        $self->ensure_class_loaded('JSON::Any');
-        JSON::Any->import;
-
-        JSON::Any->new(
-            utf8         => 1,
-            allow_nonref => 1,
-        );
+        JSON->new->utf8->allow_nonref;
     },
 );
 
@@ -43,6 +38,11 @@ has json_dumper => (
         my $self = shift;
         sub { $self->json_driver->encode(@_) };
     },
+);
+
+has status_code_field => (
+    is  => 'rw',
+    isa => "Str",
 );
 
 # steal code from Catalyst::View::JSON
@@ -85,6 +85,12 @@ sub process {
         $c->res->content_type('application/x-javascript; charset=utf-8');
     } else {
         $c->res->content_type('application/json; charset=utf-8');
+    }
+
+    if (defined (my $status_code_field = $self->status_code_field)) {
+        if (exists $data->{$status_code_field}) {
+            $c->res->header('X-JSON-Status' => $data->{$status_code_field});
+        }
     }
 
     my $output;
