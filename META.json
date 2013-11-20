@@ -57,7 +57,7 @@
             "Exporter::AutoClean" : "0",
             "FormValidator::Lite" : "0",
             "HTML::Escape" : "0",
-            "HTML::Shakan" : "0.16",
+            "HTML::Shakan" : "2.00",
             "HTTP::Cookies" : "0",
             "HTTP::Message" : "0",
             "Module::Pluggable::Object" : "0",
@@ -93,7 +93,7 @@
    "provides" : {
       "Ark" : {
          "file" : "lib/Ark.pm",
-         "version" : "1.13"
+         "version" : "1.20"
       },
       "Ark::Action" : {
          "file" : "lib/Ark/Action.pm"
@@ -212,7 +212,7 @@
          "web" : "https://github.com/ark-framework/ark"
       }
    },
-   "version" : "1.13",
+   "version" : "1.20",
    "x_contributors" : [
       "Masakazu Ohtsuka <o.masakazu@gmail.com>",
       "mattn <mattn.jp@gmail.com>",
